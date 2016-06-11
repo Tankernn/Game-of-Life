@@ -8,6 +8,8 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
+import eu.tankernn.gameEngine.util.NativesExporter;
+
 public class GameOfLife {
 
 	private static long lastFrameTime;
@@ -27,6 +29,7 @@ public class GameOfLife {
 	private static boolean debug = true;
 
 	private static void initDisplay() {
+		NativesExporter.exportNatives();
 		try {
 			Display.setDisplayMode(new DisplayMode(displayWidth, displayHeight));
 			Display.create();
