@@ -44,7 +44,7 @@
 									<mainClass>eu.tankernn.gameoflife.GameOfLife</mainClass>
 								</manifest>
 							</archive>
-							<!-- The filename of the assembled distribution file defualt ${project.build.finalName} -->
+							<!-- The filename of the assembled distribution file default ${project.build.finalName} -->
 							<finalName>${project.build.finalName}</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
