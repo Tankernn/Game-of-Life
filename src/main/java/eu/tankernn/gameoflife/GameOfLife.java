@@ -47,9 +47,6 @@ public class GameOfLife {
 	public static void main(String[] args) {
 		initDisplay();
 		cells = new boolean[gridWidth][gridHeight];
-		initCells();
-
-		dumpCells();
 
 		while (!Display.isCloseRequested()) {
 			long currentFrameTime = getCurrentTime();
@@ -181,23 +178,6 @@ public class GameOfLife {
 				}
 			}
 		return newcells;
-	}
-
-	private static void initCells() {
-		// cells[25][23] = true;
-		// cells[25][27] = true;
-		//
-		// cells[23][23] = true;
-		// cells[23][24] = true;
-		// cells[23][25] = true;
-		// cells[23][26] = true;
-		// cells[23][27] = true;
-		//
-		// cells[27][23] = true;
-		// cells[27][24] = true;
-		// cells[27][25] = true;
-		// cells[27][26] = true;
-		// cells[27][27] = true;
 	}
 
 	private static long getCurrentTime() {
